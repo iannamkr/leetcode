@@ -1,6 +1,6 @@
 package sample
 
-object daily_temperatures {
+object DailyTemperatures {
   def dailyTemperatures(T: Array[Int]): Array[Int] = {
     var pos = 0
     var i = 1
