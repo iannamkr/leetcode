@@ -1,18 +1,9 @@
 package sample
 
 object Solution {
-  def moveZeroes(nums: Array[Int]): Unit = {
-    var pos = 0
-    for(i <- nums.indices) {
-      val num = nums(i)
-      if(num != 0) {
-        nums(pos) = nums(i)
-        pos += 1
-      }
-    }
-    for(i <- 1 to ((pos - 1))) {
-      nums(nums.length - i) = 0
-    }
+  def moveZeroes(nums: Array[Int]): Array[Int] = {
+    val nonZero = nums.filter(_ != 0)
+    nonZero ++ Array.fill(nums.length - nonZero.length){0}
   }
 
   def main(args: Array[String]): Unit = {
