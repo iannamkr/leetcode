@@ -1,7 +1,7 @@
 package sample
 
 object Solution {
-  def moveZeroes(nums: Array[Int]): Array[Int] = {
+  def moveZeroes(nums: Array[Int]): Unit = {
     val nonZero = nums.filter(_ != 0)
     nonZero ++ Array.fill(nums.length - nonZero.length){0}
   }
