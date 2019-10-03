@@ -1,6 +1,6 @@
 package sample
 
-object climbing_stairs {
+object ClimbingStairs {
   def climbStairs(n: Int): Int = {
     val cases = new Array[Int](n + 2)
     cases(0) = 1
