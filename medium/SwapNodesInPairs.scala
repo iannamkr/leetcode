@@ -5,8 +5,8 @@ object SwapNodesInPairs {
     var next: ListNode = null
     var x: Int = _x
 
-    def next(node: ListNode): Unit = {
-      this.next = node
+    def next(next: ListNode): Unit = {
+      this.next = next
     }
   }
 
@@ -22,14 +22,14 @@ object SwapNodesInPairs {
     }
   }
 
-  def printListNode(node: ListNode): Unit = {
-    print(node.x)
-    if(node.next != null) {
-      print(" -> ")
-      printListNode(node.next)
-    }
-    println()
-  }
+//   def printListNode(node: ListNode): Unit = {
+//     print(node.x)
+//     if(node.next != null) {
+//       print(" -> ")
+//       printListNode(node.next)
+//     }
+//     println()
+//   }
 
   def main(args: Array[String]): Unit = {
     var node1 = new ListNode(1)
@@ -42,6 +42,6 @@ object SwapNodesInPairs {
     node3.next(node4)
 
     swapPairs(node1)
-    printListNode(node1)
+//     printListNode(node1)
   }
 }
