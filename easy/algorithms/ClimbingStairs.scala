@@ -1,5 +1,3 @@
-package sample
-
 object ClimbingStairs {
   def climbStairs(n: Int): Int = {
     val cases = new Array[Int](n + 2)

@@ -1,5 +1,3 @@
-package sample
-
 object MoveZeros {
   def moveZeroes(nums: Array[Int]): Unit = {
     val nonZero = nums.filter(_ != 0)

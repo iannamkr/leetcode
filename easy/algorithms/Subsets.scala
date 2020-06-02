@@ -1,5 +1,3 @@
-package sample
-
 object Subsets {
   def subsets(nums: Array[Int]): List[List[Int]] = nums.toSet[Int].subsets().map(_.toList).toList
 

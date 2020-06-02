@@ -1,5 +1,3 @@
-package sample
-
 object SingleNumber {
   def singleNumber(nums: Array[Int]): Int = nums.reduceLeft(_ ^ _)
 

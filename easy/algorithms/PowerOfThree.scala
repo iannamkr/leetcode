@@ -1,5 +1,3 @@
-package leetcode
-
 object PowerOfThree {
   // timeout
 //  def isPowerOfThree(n: Int): Boolean = {
