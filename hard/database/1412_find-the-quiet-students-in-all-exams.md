@@ -1,6 +1,7 @@
+quite student: 최소 한번 시험을 치뤘으나, 매 시험마다 최고점 또는 최저점을 받지 않고 항상 중간(?) 점수를 받은 학생을 찾아봐라
+
 ### 1
 ```mysql
-# quite: 최소 한번 시험을 치뤘으나, 최고점/최저점을 받지 않은 학생 
 select 
   student_id, 
   student_name 
