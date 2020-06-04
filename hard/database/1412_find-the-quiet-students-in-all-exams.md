@@ -40,7 +40,7 @@ select
   max(s.student_name) student_name
 from e
 left join Student s
-on e.student_id = s.student_id
+  on e.student_id = s.student_id
 where e.student_id not in (select student_id from e where rank1 = 1 or rank2 = 1)
 group by s.student_id, s.student_name
 ```
