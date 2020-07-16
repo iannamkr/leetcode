@@ -5,6 +5,7 @@ class Node(var _value: Int) {
 
 object Solution {
     def findRoot(tree: List[Node]): Node = {
+        // each node has a unique value
         val seen: List[Node] = tree.foldLeft(List[Node]()){ case (x, y) ⇒ x ::: y.children }
         val root = tree.filterNot(x ⇒ seen.map(_.value).contains(x.value)).last
         root
