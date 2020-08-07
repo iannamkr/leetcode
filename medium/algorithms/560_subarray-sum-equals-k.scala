@@ -1,7 +1,7 @@
 object Solution {
-    type d3 = (Int, Int)
+    type d2 = (Int, Int)
 
-    def updater(k: Int)(p: d3, num: Int): d3 = p match {
+    def updater(k: Int)(p: d2, num: Int): d2 = p match {
         case (sum, count) ⇒
             if(sum + num == k) {
                 (sum + num, count + 1)
